@@ -16,25 +16,29 @@ Tomei vergonha na cara e quero apreder baixo nível
 
 ```
 Assembly/
-├── Windows/          # Códigos específicos para Windows (MASM/API calls)
-│   ├── hello.asm     # Exemplo básico com MessageBox
-│   ├── arithmetic.asm # Operações matemáticas
-│   └── syscalls.asm  # Uso de WinAPI
+├── Markdown
+│   ├── Linux.md        # Cheat Set para pesquisar instruções do Linux
+│   └── Windows.md      # Cheat Set para pesquisar instruções do Windows
 │
-├── Linux/            # Códigos para Linux (NASM/SYSCALL)
-│   ├── hello.asm     # "Hello World" (sys_write)
-│   ├── fibonacci.asm # Cálculo de Fibonacci
-│   └── reverse.asm   # Exemplo de engenharia reversa
+├── Windows/            # Códigos específicos para Windows (MASM/API calls)
+│   ├── hello.asm       # Exemplo básico com MessageBox
+│   ├── arithmetic.asm  # Operações matemáticas
+│   └── syscalls.asm    # Uso de WinAPI
 │
-├── x86/              # Códigos em 32-bit (modo protegido)
-│   ├── bootloader/   # Exemplo simples de bootloader
-│   └── interrupts.asm # Manipulação de interrupções
+├── Linux/              # Códigos para Linux (NASM/SYSCALL)
+│   ├── hello.asm       # "Hello World" (sys_write)
+│   ├── fibonacci.asm   # Cálculo de Fibonacci
+│   └── reverse.asm     # Exemplo de engenharia reversa
 │
-├── x64/              # Códigos em 64-bit
-│   ├── avx.asm       # Instruções AVX (vetorização)
-│   └── shellcode.asm # Shellcode básico
+├── x86/                # Códigos em 32-bit (modo protegido)
+│   ├── bootloader/     # Exemplo simples de bootloader
+│   └── interrupts.asm  # Manipulação de interrupções
 │
-└── README.md         # Este guia
+├── x64/                # Códigos em 64-bit
+│   ├── avx.asm         # Instruções AVX (vetorização)
+│   └── shellcode.asm   # Shellcode básico
+│
+└── README.md           # Este guia
 ```
 
 ---
