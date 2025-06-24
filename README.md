@@ -16,7 +16,8 @@ Tomei vergonha na cara e quero apreder baixo nível
 
 ```
 Assembly/
-├── Markdown
+│
+├── Markdown/
 │   ├── Linux.md        # Cheat Set para pesquisar instruções do Linux
 │   └── Windows.md      # Cheat Set para pesquisar instruções do Windows
 │
