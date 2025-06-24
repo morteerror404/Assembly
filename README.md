@@ -17,29 +17,62 @@ Tomei vergonha na cara e quero apreder baixo nível
 ```
 Assembly/
 │
+├── config/
+│   ├── Linux.md            # Arquivo de configuração para Linux
+│   └── Windows.md          # Arquivo de configuração para Windows
+│
 ├── Markdown/
-│   ├── Linux.md        # Cheat Set para pesquisar instruções do Linux
-│   └── Windows.md      # Cheat Set para pesquisar instruções do Windows
+│   ├── Linux.md            # Cheat Set para pesquisar instruções do Linux
+│   └── Windows.md          # Cheat Set para pesquisar instruções do Windows
+│   
+├── Windows/                # Códigos específicos para Windows (MASM/API calls)
+│   ├── hello.asm           # Exemplo básico com MessageBox
+│   ├── arithmetic.asm      # Operações matemáticas
+│   └── syscalls.asm        # Uso de WinAPI
 │
-├── Windows/            # Códigos específicos para Windows (MASM/API calls)
-│   ├── hello.asm       # Exemplo básico com MessageBox
-│   ├── arithmetic.asm  # Operações matemáticas
-│   └── syscalls.asm    # Uso de WinAPI
+├── Linux/                  # Códigos para Linux (NASM/SYSCALL)
+│   ├── hello.asm           # "Hello World" (sys_write)
+│   ├── fibonacci.asm       # Cálculo de Fibonacci
+│   └── reverse.asm         # Exemplo de engenharia reversa
+│   
+├── x86/                    # Códigos em 32-bit (modo protegido)
+│   └─ bootloader/          # Exemplo simples de bootloader
+│       ├── interrupts.asm  # Manipulação de interrupções
+│       │
+│       ├───stage1/         # Bootloader estágio 1 (16-bit)
+│       │   ├── boot.asm    # Código principal do bootloader
+│       │   ├── disk.asm    # Rotinas de leitura de disco
+│       │   ├── print.asm   # Funções para imprimir na tela
+│       │   ├── memory.asm  # Manipulação básica de memória
+│       │   └── Makefile    # Para compilação automatizada
+│       │
+│       ├── stage2/         # Bootloader estágio 2 (32-bit)
+│       │   ├── main.asm    # Código principal 32-bit
+│       │   ├── gdt.asm     # Configuração da Global Descriptor Table
+│       │   ├── a20.asm     # Ativação da linha A20
+│       │   ├── pm.asm      # Entrada no modo protegido
+│       │   └── Makefile
+│       │
+│       ├── kernel/         # Kernel mínimo para teste
+│       │   ├── kernel.asm  # Kernel básico em 32-bit
+│       │   └── link.ld     # Script de linker
+│       │
+│       └── tools/          # Ferramentas auxiliares
+│           ├── makedisk.sh # Script para criar imagem de disco
+│           └── qemu-run.sh # Script para executar no QEMU
 │
-├── Linux/              # Códigos para Linux (NASM/SYSCALL)
-│   ├── hello.asm       # "Hello World" (sys_write)
-│   ├── fibonacci.asm   # Cálculo de Fibonacci
-│   └── reverse.asm     # Exemplo de engenharia reversa
+├── x64/                    # Códigos em 64-bit
+│   ├── avx.asm             # Instruções AVX (vetorização)
+│   └── shellcode.asm       # Shellcode básico
 │
-├── x86/                # Códigos em 32-bit (modo protegido)
-│   ├── bootloader/     # Exemplo simples de bootloader
-│   └── interrupts.asm  # Manipulação de interrupções
+├── x32/                    # Códigos 32-bit
+│   ├── avx.asm             # Instruções AVX em 32-bit
+│   ├── shellcode.asm       # Shellcode 32-bit
+│   └── winapi/             # Exemplos de Win32 API
+│       ├── messagebox.asm  # Caixa de mensagem básica
+│       └── fileio.asm      # Operações com arquivos
 │
-├── x64/                # Códigos em 64-bit
-│   ├── avx.asm         # Instruções AVX (vetorização)
-│   └── shellcode.asm   # Shellcode básico
-│
-└── README.md           # Este guia
+└── README.md # Este guia
 ```
 
 ---
