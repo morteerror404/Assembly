@@ -21,7 +21,7 @@ Assembly/
 │   ├── Linux.md            # Arquivo de configuração para Linux
 │   └── Windows.md          # Arquivo de configuração para Windows
 │
-├── Markdown/
+├── Cheat-Set/
 │   ├── Linux.md            # Cheat Set para pesquisar instruções do Linux
 │   └── Windows.md          # Cheat Set para pesquisar instruções do Windows
 │   
