@@ -15,7 +15,6 @@ _start:
     call calc 
     syscall 
 calc: 
-    ; 1 + 1 = Result 
     add result, rax         ; Result =+ rax 
     add result, rbx         ; Result =+ rbx
     mov rax, result         ; rax = result (2)
